@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #F4F4F4;
+    font-size: 1.8rem;
+    padding: 1rem 1.8rem;
+    border-radius: .8rem;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #414141;
+}
