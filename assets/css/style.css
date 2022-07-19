@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    margin-inline: 26.3rem;
+    margin-inline: 6.3rem;
 }
 
 .section__title {
@@ -45,6 +45,10 @@ body {
     justify-content: space-between;
 }
 
+.nav__list {
+    display: flex;
+}
+
 .nav__icon {
     display: flex;
     align-items: center;
@@ -67,6 +71,7 @@ body {
 .nav__link {
     color: var(--primary-color);
 }
+
 
 .nav__btn {
     font-size: 1.4rem;
@@ -473,3 +478,291 @@ body {
     font-weight: 500;
     line-height: 1.9rem;
 }
+
+@media screen and (max-width: 960px) {
+
+    .nav__link {
+        font-size: 2rem;
+    }
+
+    .home {
+        margin-block: 10rem 14rem;
+    }
+
+    .home__container {
+        flex-direction: column;
+        gap: 10rem;
+        text-align: center;
+    }
+
+    .home__text,
+    .companies__title,
+    .payment__title,
+    .payment__text--one, 
+    .award__text--one,
+    .built__text--one{
+        width: auto;
+    }
+
+    .payment__card--one, 
+    .award__card--one{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .payment__title {
+        margin-bottom: 22rem;
+    }
+
+    .payment__card--one {
+        gap: 15rem;
+        flex-direction: column-reverse;
+    }
+
+    .payment__credit  {
+        padding: 0;
+    }
+
+    .payment__line {
+        right: 10rem;
+    }
+
+    .payment__data::after {
+        right: 50%;
+        transform: translate(50%);
+    }
+
+    .award__subtitle {
+        margin-top: 5rem;
+    }
+
+    .checking {
+        margin-top: 10rem;
+    }
+
+    .checking__data {
+        flex-direction: column;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    .checking__card {
+        width: auto;
+    }
+
+    .built {
+        margin-top: 15rem;
+    }
+
+    .built__data {
+        flex-direction: column;
+        gap: 12rem;
+    }
+
+    .built__text--one {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header{
+        position: fixed;
+        width: 100%;
+        background-color: var(--body-color);
+        z-index: 100;
+        margin-top: -10rem;
+        padding-block: 2rem;
+    }
+
+    .nav__list {
+        position: fixed;
+        top: 9vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: var(--body-color);
+
+        justify-self: center;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        z-index: 1;
+        transform: translateX(100%);
+    }
+
+
+    #menu__hamburguer {
+        display: block;
+    }
+
+    .nav__item:not(:last-child){
+        margin-right: 0;
+    }
+
+    .nav__list.active {
+        transform: translateX(0);
+    }
+
+    .companies__data {
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    .built__image,
+    .award__image,
+    .payment__credit {
+        width: 40rem;
+    }
+
+    .built__line,
+    .award__line {
+        width: 10rem;
+        top: -8rem;
+    }
+
+    .contact__title.section__title {
+        font-size: 3.2rem;
+        padding-inline: 3rem;
+    }
+
+    .footer__text {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .footer__subtitle {
+        text-align: center;
+        width: auto;
+    }
+
+    .footer__menu--list {
+        text-align: center;
+    }
+
+    .footer__container {
+        padding-bottom: 12rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        margin-inline: 4rem;
+    }
+
+    .home__img {
+        width: 40rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .container {
+        margin-inline: 2rem;
+    }
+
+    .home__data {
+        gap: 0;
+    }
+
+    .home__img {
+        width: 35rem;
+    }
+
+    .home__line {
+        width: 30rem;
+    }
+
+    .built__image,
+    .award__image,
+    .payment__credit {
+        width: 30rem;
+    }
+
+    .payment__data::after {
+        width: 24rem;
+        height: 40rem;
+    }
+
+    .payment__line {
+        top: -12rem;
+        right: 6rem;
+    }
+
+    .award__legend,
+    .built__legend {
+        padding: 1.5rem 2.5rem 1rem 1.5rem;
+    }
+
+    .legend__subtitle,
+    .b-legend__subtitle {
+        font-size: 2rem;
+    }
+
+    .legend__description,
+    .b-legend__description {
+        font-size: 1.2rem;
+    }
+
+    .payment__line,
+    .built__line,
+    .award__line {
+        width: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    
+    .section__title {
+        font-size: 3.5rem;
+    }
+
+    .nav__link {
+        font-size: 1.6rem;
+    }
+
+    .nav__list {
+        height: 100vh;
+    }
+
+    .home {
+        margin-bottom: 10rem;
+    }
+
+    .home__title {
+        font-size: 4rem;
+    }
+    
+    .payment__title,
+    .payment__content {
+        margin-bottom: 15rem;
+    }
+
+    .contact__title.section__title {
+        font-size: 3rem;
+    }
+
+    .contact__btn {
+        padding: 1.4rem;
+    }
+
+    .built__subtitle {
+        margin-bottom: 5rem;
+    }
+
+    .built__data {
+        gap: 5rem;
+    }
+
+    .footer__menu {
+        gap: 7rem;
+    }
+} 

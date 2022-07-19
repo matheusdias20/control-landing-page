@@ -6,9 +6,6 @@ a {
     text-decoration: none;
 }
 
-ul {
-    display: flex;
-}
 
 li{
     list-style: none;
@@ -26,4 +23,10 @@ li{
 
 .btn:hover {
     background-color: #414141;
+}
+
+#menu__hamburguer {
+    font-size: 3rem;
+    color: var(--primary-color);
+    display: none;
 }
