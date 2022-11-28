@@ -1,21 +1,24 @@
-<h1 align="center">📊 Previsões estatísticas para Copa do Mundo 2022 - Qatar</h1>
+<h1 align="center">💠 Control Lander</h1>
 <p align="center">
-  <strong>Projeto criado no curso Data Science na copa do mundo da FLAI, uma IA que prevê resultados de jogos</strong>
+  <strong>Landing Page realizada como forma de estudo</strong>
   <br>
 </p>
 
 <p align="center">
-  <img src="./data/README.jpeg" alt="">
+  <img src="assets/img/README.png" alt="">
 </p>
 
 
 
 ### Site 💻
 
-- [Previsões Estatísticas]()
+- [Control Lander](https://control-landing-page.netlify.app/)
 
-## Linguagens & Tecnologias: 🚀
-- Google Colab
-- Streamlit
-- Python
+## Linguagens: 🚀
+- HTML
+- CSS
+- JavaScript
+
+
+
 
